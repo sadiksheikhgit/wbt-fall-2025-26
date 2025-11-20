@@ -10,43 +10,72 @@
     </head>
 
     <body>
-        <ul> 
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="/Portfolio/html/experience.html">Experience</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="projects.html">projects</a></li>
-        </ul>
-        <p> Use this form to Contact me:</p>
+        <nav>
+            <ul>
+                <li><a href="/Portfolio/index.html"> Home</a></li>
+                <li> <a href="/Portfolio/html/education.html">Education</a></li>
+                <li> <a href="/Portfolio/html/experience.html">Experience</a></li>
+                <li> <a href="/Portfolio/html/projects.html">Projects</a></li>
+            </ul>
+        </nav>
+        <h2>Use this form to Contact me:</h2>
+        <hr>
         
         <form  method="get">  
             
-            <p class="f1 ">
-            First Name <input type="text" Name = "firstName" required> <br>
-            Last Name <input type="text" Name = "firstName" required> <br>
-            Company   <input type="text" Name = "firstName" > <br>
-            </p>
-            <p class="f2">
-            <div id="test">
-            Reason for contact <br>
+           <div class="container">
+            <div class="inputs">
+                <div class="box">
+                    <label for="firstname"> First Name</label>
+                    <input type="text" name = "firstname" required />
+                </div>
+
+                 <div class="box">
+                    <label for="lastname"> Last Name</label>
+                    <input type="text" name = "lastname" required />
+                </div>
+
+                <div class="box">
+                    <label for="company"> Company</label>
+                    <input type="text" name = "company" required />
+                </div>
             </div>
-            <input type="radio" Name="reason" required>Reaserch<br>
-            <input type="radio" Name="reason" >Thesis<br>
-            <input type="radio" Name="reason" >job<br>
-            </p>
-            3 services you provide: <br>
-            <input type="checkbox" > Data Science <br>
-            <input type="checkbox" > Statistics<br>
-            <input type="checkbox"> Web Tech<br>
-            <input type="checkbox"> CTF<br>
-            <input type="checkbox" > Python<br>
+           
+           <hr>
 
-            Book and Appointment:
+           <div class="radio">
+            <label for="reason"> Reason for Contacting me:</label>
+            <hr>
+            <input type="radio" name="reason" value="Projects" required /> Projects<br>
+            <input type="radio" name="reason" value="Thesis" required /> Thesis <br>
+            <input type="radio" name="reason" value="Job" required /> Job <br>
+           </div>
 
-            <input type="date" required> <br>
+           <div class="services">
+            <label for="services"> Services you would offer:</label> <br>
+            <hr>
+            <input type="checkbox" name="services" value="webDev" required > Web developement <br>    
 
-            <input type="submit" value="register">
-            <input type="reset" value="reset">
+            
+            <input type="checkbox" name="services" value="ml"  > Machine Learning<br> 
 
+            
+            <input type="checkbox" name="services" value="stats" > Statistics <br> 
+           </div>
+
+           
+           <div class="booking">
+            <label for="date">  Book and Appointment:</label>
+            <hr>
+             <input type="date" value="dd-mm-yyyy"> <br>
+           </div>
+
+           <div class="reg">
+             <input id="sbm" type="submit" value="register">
+            <input id= "rst"type="reset" value="reset">
+           </div>
+
+           </div>
         
 
 
