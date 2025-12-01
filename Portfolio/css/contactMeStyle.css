@@ -14,11 +14,13 @@ form{
     margin:  10px;
     display: flex;
     justify-content: center;
+    /* controls horizontal */
     align-items: center;
+    /* controls vertical */
 
 }
 form label{
-    width: 120px;
+    width: 100px;
     /* color:darkgray; */
 }
 .container{
